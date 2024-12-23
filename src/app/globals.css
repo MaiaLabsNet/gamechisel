@@ -1,21 +1,51 @@
+/* Global.CSS */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0b0b0b;
+  --foreground: #333333;
+  --color-link: #d6d6d6;
+  --color-link-hover: #d4af37;
+  --text-color: white;
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-color);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+  padding-left: 2;
+  padding-right: 2;
+}
+
+.background {
+  background-color: var(--background);
+}
+
+.foreground {
+  background-color: var(--foreground);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.link {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.link:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.unselectable {
+  user-select: none;
+  /* Prevent text selection */
 }

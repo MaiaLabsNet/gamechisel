@@ -1,3 +1,6 @@
+## GameChisel.com
+News and updates for Game Chisel. A Stylized Game Asset Collection and Multiplayer Game.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
