@@ -17,9 +17,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => {
   return (
     <div className="pb-12 text-center">
-      <h3 className="text-gray-100 text-lg font-semibold uppercase">
+      <p className="text-gray-100 text-lg font-semibold uppercase">
         {subtitle}
-      </h3>
+      </p>
       <h2 className="text-4xl font-bold text-white">{title}</h2>
       {description && (
         <p className="inline text-lg font-normal text-gray-200 mx-auto w-full px-4 lg:w-1/2 py-4">
