@@ -36,7 +36,7 @@ export default function NewsPage() {
           subtitle="404"
           description="Sorry, we couldn't find the news article you're looking for."
         />
-        <BackButton text="Back to News" link="/news" />
+        <BackButton text="Go to News" link="/news" />
       </section>
     );
   }
