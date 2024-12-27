@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image"; // Keep import for Image
+import Image from "next/image";
 
 // Interface
 export type AssetProps = {
@@ -56,6 +56,8 @@ const AssetPage = ({
                 alt="Selected Media"
                 className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md object-cover"
                 layout="fill"
+                width={1920}
+                height={1080}
               />
             )}
           </div>
