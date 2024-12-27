@@ -2,6 +2,7 @@
 
 "use client";
 
+// Imports
 import React from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -22,13 +23,11 @@ export function Navbar() {
   }, []);
 
   const navbarConfig = [
-    { name: "Home", id: "Home" },
-    { name: "Skills", id: "Goal" },
-    { name: "Timeline", id: "Timeline" },
-    { name: "Projects", id: "Projects" },
-    { name: "Social", id: "Social" },
-    { name: "MaiaLabs", id: "MaiaLabs" },
-    { name: "Contact", id: "Contact" },
+    { name: "Home", id: "/" },
+    { name: "Game", id: "/game" },
+    { name: "Assets", id: "/assets" },
+    { name: "News", id: "/news" },
+    { name: "Team", id: "/team" },
   ];
 
   const handleSignIn = () => {
@@ -36,7 +35,10 @@ export function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-opacity-85 backdrop-blur-md w-full rounded-none px-4 py-4">
+    <nav
+      id="navbar"
+      className="sticky top-0 z-50 bg-opacity-90 backdrop-blur-md w-full rounded-none contx py-4"
+    >
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-lg font-bold text-white">
@@ -50,7 +52,7 @@ export function Navbar() {
           {navbarConfig.map((item) => (
             <li key={item.id}>
               <Link
-                href={`/#${item.id}`}
+                href={`${item.id}`}
                 className="text-white font-[500] hover:bg-[#d4af37] hover:text-black py-3 px-6 rounded-lg transition"
               >
                 {item.name}
@@ -60,7 +62,7 @@ export function Navbar() {
         </ul>
 
         {/* Sign In / Profile Button */}
-        <div className="hidden lg:flex items-center gap-4">
+        {/* <div className="hidden lg:flex items-center gap-4">
           {isLoggedIn ? (
             <Link
               href="/profile"
@@ -76,29 +78,30 @@ export function Navbar() {
               Sign In
             </button>
           )}
-        </div>
+        </div> */}
 
         {/* Mobile Menu Toggle */}
         <button
           className="lg:hidden text-white hover:bg-[#d4af37] hover:text-black p-2 rounded-lg transition"
           onClick={handleOpen}
+          aria-label={open ? "Menü schließen" : "Menü öffnen"} // Dynamische Beschreibung für Screenreader
         >
           {open ? (
-            <XMarkIcon className="w-6 h-6" />
+            <XMarkIcon className="w-6 h-6" aria-hidden="true" /> // Icon als dekorativ markieren
           ) : (
-            <Bars3Icon className="w-6 h-6" />
+            <Bars3Icon className="w-6 h-6" aria-hidden="true" /> // Icon als dekorativ markieren
           )}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {open && (
-        <div className="lg:hidden bg-gray-900 rounded-b-xl border-t border-[#c0c0c0]">
+        <div className="lg:hidden bg-opacity-0 rounded-b-xl border-t border-[#c0c0c0]">
           <ul className="flex flex-col items-center gap-4 p-4">
             {navbarConfig.map((item) => (
               <li key={item.id} className="w-full">
                 <Link
-                  href={`#${item.id}`}
+                  href={`${item.id}`}
                   onClick={() => setOpen(false)}
                   className="text-white hover:bg-[#d4af37] hover:text-black py-3 px-6 rounded-lg transition w-full text-center block font-[500]"
                 >

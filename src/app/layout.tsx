@@ -1,3 +1,5 @@
+// RootLayout.tsx
+
 // General
 import type { Metadata, Viewport } from "next";
 
@@ -16,9 +18,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Game Chisel",
-  description: "Multiplayer Game",
-  creator: "Milan Kiele",
+  title: "GameChisel",
+  description: "Game & Assets",
+  creator: "GameChisel",
 };
 
 export const viewport: Viewport = {
