@@ -67,9 +67,13 @@ function Hero() {
 
             {/* Extra */}
             <div className="flex flex-col gap-2">
-              <NeonButton href="#" text="&rarr; Download Game!" variant="1" />
               <NeonButton
-                href="#"
+                href="/game"
+                text="&rarr; Download Game!"
+                variant="1"
+              />
+              <NeonButton
+                href="/assets"
                 text="&rarr; Grab your assets now!"
                 variant="1"
               />
