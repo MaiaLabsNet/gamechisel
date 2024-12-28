@@ -1,7 +1,5 @@
 // LauncherButtons.tsx
 
-"use client";
-
 // Imports
 import React from "react";
 import { FaSteam, FaGooglePlay } from "react-icons/fa";

@@ -1,7 +1,5 @@
 // SkillsSection.tsx
 
-"use client";
-
 // Imports
 import React from "react";
 import {
