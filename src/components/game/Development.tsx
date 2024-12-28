@@ -1,9 +1,7 @@
 // DevelopmentSection.tsx
 
 // Imports
-import { GiJungle } from "react-icons/gi";
 import SectionHeader from "../base/SectionHeader";
-import { SiConventionalcommits } from "react-icons/si";
 
 export default function Development() {
   const developmentFeatures = [
