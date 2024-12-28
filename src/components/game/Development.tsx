@@ -1,7 +1,9 @@
 // DevelopmentSection.tsx
 
 // Imports
+import { GiJungle } from "react-icons/gi";
 import SectionHeader from "../base/SectionHeader";
+import { SiConventionalcommits } from "react-icons/si";
 
 export default function Development() {
   const developmentFeatures = [
@@ -9,30 +11,16 @@ export default function Development() {
       category: "Character Features",
       items: [
         { name: "Main Character", isDone: false },
-        {
-          name: "Character Abilities",
-          isDone: false,
-          subitems: [
-            { name: "Speed", isDone: false },
-            { name: "Strength", isDone: false },
-            { name: "Shooting", isDone: false },
-            { name: "Dashing", isDone: false },
-            { name: "Healing", isDone: false },
-            { name: "Throwing", isDone: false },
-          ],
-        },
-        { name: "Character Customization", isDone: false },
+        { name: "Character Abilities", isDone: false },
         { name: "Animation", isDone: false },
         { name: "Design", isDone: false },
-        { name: "Character Skin Variants", isDone: false },
         { name: "Character Voice Acting", isDone: false },
-        { name: "Facial Expressions", isDone: false },
       ],
     },
     {
       category: "Gameplay",
       items: [
-        { name: "Jumping", isDone: false },
+        { name: "Movement System", isDone: false },
         { name: "Fighting", isDone: false },
         { name: "Enemies", isDone: false },
         { name: "Multiplayer", isDone: false },
@@ -41,45 +29,47 @@ export default function Development() {
         { name: "Combat System", isDone: false },
         { name: "Skills/Abilities System", isDone: false },
         { name: "Physics", isDone: false },
-        { name: "Movement System", isDone: false },
-      ],
-    },
-    {
-      category: "World Map",
-      items: [
-        { name: "Spruce Forest", isDone: false },
-        { name: "Caves", isDone: false },
-        { name: "Battle Arena", isDone: false },
-        { name: "Desert", isDone: false },
-        { name: "Zoomer Pathways", isDone: false },
-        { name: "Racetrack", isDone: false },
-        { name: "Night Cycle", isDone: false },
-        { name: "Dynamic Weather", isDone: false },
-        { name: "Day/Night Cycle", isDone: false },
-        { name: "World Transitions", isDone: false },
       ],
     },
     {
       category: "Abilities",
       items: [
-        { name: "Speed", isDone: false },
-        { name: "Strength", isDone: false },
-        { name: "Shooting", isDone: false },
-        { name: "Dashing", isDone: false },
-        { name: "Stealth", isDone: false },
-        { name: "Telekinesis", isDone: false },
-        { name: "Energy Shield", isDone: false },
+        { name: "Eletric Speed", isDone: false },
+        { name: "Infused Strength", isDone: false },
+        { name: "Collectable Shooting", isDone: false },
+        { name: "Loaded Dashing", isDone: false },
+        { name: "Timed Shield", isDone: false },
+        { name: "Collected Health", isDone: false },
       ],
     },
     {
       category: "Enemies",
       items: [
-        { name: "Robot Enemies", isDone: false },
-        { name: "Boss Battles", isDone: false },
+        { name: "Simple Robot", isDone: false },
+        { name: "Flying Robot", isDone: false },
+        { name: "Heavy Robot", isDone: false },
+        { name: "Mini Robot", isDone: false },
+        { name: "Giant Robot", isDone: false },
+        { name: "Spin Robot", isDone: false },
+        { name: "Invisible Robot", isDone: false },
+        { name: "Spider Robot", isDone: false },
+        { name: "Jumper Robot", isDone: false },
+        { name: "Roller Robot", isDone: false },
+        { name: "Shielded Robot", isDone: false },
+        { name: "Fog Robot", isDone: false },
+        { name: "Poisonous Robot", isDone: false },
+        { name: "Creeper Robot", isDone: false },
+        { name: "Healing Robot", isDone: false },
+        { name: "Magnet Robot", isDone: false },
+        { name: "Laser Robot", isDone: false },
+        { name: "Fire Robot", isDone: false },
+        { name: "Crawler Robot", isDone: false },
+        { name: "Shiny Robot", isDone: false },
+        { name: "Bomber Robot", isDone: false },
+        { name: "Spawner Robot", isDone: false },
         { name: "Enemy AI", isDone: false },
-        { name: "Enemy Variants", isDone: false },
-        { name: "Enemy Difficulty Scaling", isDone: false },
         { name: "Elite Enemies", isDone: false },
+        { name: "Boss Robot", isDone: false },
       ],
     },
     {
@@ -96,6 +86,13 @@ export default function Development() {
       ],
     },
     {
+      category: "Collectables",
+      items: [
+        { name: "Thermal Cores", isDone: false },
+        { name: "Magnetic Shards", isDone: false },
+      ],
+    },
+    {
       category: "Essentials",
       items: [
         {
@@ -108,9 +105,58 @@ export default function Development() {
           isDone: false,
           subitems: [{ name: "Portals", isDone: false }],
         },
-        { name: "HUD", isDone: false },
+        { name: "Minimal HUD", isDone: false },
         { name: "Inventory System", isDone: false },
         { name: "Crafting System", isDone: false },
+      ],
+    },
+    {
+      category: "Locations",
+      items: [
+        {
+          name: "Hub",
+          isDone: false,
+          level: "Level 0",
+          subitems: [
+            { name: "Space Station", isDone: false },
+            { name: "Hangar", isDone: false },
+            { name: "Command Center", isDone: false },
+            { name: "Portal Room", isDone: false },
+            { name: "Zoomer Racetrack", isDone: false },
+            { name: "Training Grounds", isDone: false },
+            { name: "Trophy Room", isDone: false },
+            { name: "Secret Room", isDone: false },
+          ],
+        },
+        {
+          name: "Coast Base",
+          isDone: false,
+          level: "Level 1",
+          subitems: [
+            { name: "Main Base", isDone: false },
+            { name: "Beach Outskirts", isDone: false },
+            { name: "Underground Base", isDone: false },
+            { name: "Ship Wreckage", isDone: false },
+            { name: "Swamp", isDone: false },
+            { name: "Zoomer Waves", isDone: false },
+            { name: "Connection Zoomer Racetrack", isDone: false },
+          ],
+        },
+        {
+          name: "Electricity Station",
+          isDone: false,
+          level: "Level 2",
+          subitems: [
+            { name: "Generator Core", isDone: false },
+            { name: "Control Tower", isDone: false },
+            { name: "Power Plant", isDone: false },
+            { name: "Power Bridge", isDone: false },
+            { name: "Spruce Forest", isDone: false },
+            { name: "Dead Holes", isDone: false },
+            { name: "Zoomer fields", isDone: false },
+            { name: "Connection Zoomer Racetrack", isDone: false },
+          ],
+        },
       ],
     },
     {
@@ -119,7 +165,6 @@ export default function Development() {
         { name: "Zoomer", isDone: false },
         { name: "Rover", isDone: false },
         { name: "Racetrack", isDone: false },
-        { name: "Vehicle Customization", isDone: false },
       ],
     },
     {
@@ -129,6 +174,8 @@ export default function Development() {
         { name: "Station", isDone: false },
         { name: "Base", isDone: false },
         { name: "Power Systems", isDone: false },
+        { name: "Items", isDone: false },
+        { name: "Weapons", isDone: false },
       ],
     },
     {
